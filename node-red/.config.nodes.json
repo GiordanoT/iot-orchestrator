@@ -676,5 +676,24 @@
                 "file": "/data/node_modules/node-red-contrib-influxdb/influxdb.js"
             }
         }
+    },
+    "node-red-contrib-loop": {
+        "name": "node-red-contrib-loop",
+        "version": "1.0.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "loop": {
+                "name": "loop",
+                "types": [
+                    "loop"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-loop",
+                "file": "/data/node_modules/node-red-contrib-loop/loop.js"
+            }
+        }
     }
 }
