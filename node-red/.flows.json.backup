@@ -7,9 +7,33 @@
         "info": ""
     },
     {
+        "id": "5c888227d3c31d09",
+        "type": "tab",
+        "label": "actuators",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9b141d136e8f2a6b",
+        "type": "tab",
+        "label": "predictions",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d41a571824d79944",
+        "type": "tab",
+        "label": "realTimeData",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3f89dc9d9f939810",
         "type": "mqtt-broker",
-        "name": "",
+        "name": "myBroker",
         "broker": "172.20.0.100",
         "port": "1883",
         "clientid": "",
@@ -36,10 +60,10 @@
     {
         "id": "cd00130e58b07552",
         "type": "ui_group",
-        "name": "sensors",
+        "name": "container_0",
         "tab": "2589211dbdb579e4",
         "order": 1,
-        "disp": true,
+        "disp": false,
         "width": "6",
         "collapse": false,
         "className": ""
@@ -47,7 +71,7 @@
     {
         "id": "2589211dbdb579e4",
         "type": "ui_tab",
-        "name": "dayTest",
+        "name": "Real Time Data",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -61,7 +85,8 @@
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
@@ -163,6 +188,137 @@
         "rejectUnauthorized": true
     },
     {
+        "id": "389563e852d78106",
+        "type": "ui_group",
+        "name": "container_0",
+        "tab": "053cac909ccf8498",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "053cac909ccf8498",
+        "type": "ui_tab",
+        "name": "Predictions",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c75c71a484171217",
+        "type": "ui_tab",
+        "name": "Actuators",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "abd1a74c2aa8c24b",
+        "type": "ui_group",
+        "name": "container_0",
+        "tab": "c75c71a484171217",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26332cb7.024dd4",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "e45fadc8.79108",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e45fadc8.79108",
+        "type": "ui_tab",
+        "name": "Start",
+        "icon": "dashboard"
+    },
+    {
+        "id": "afd0e4f8b5dd7182",
+        "type": "ui_group",
+        "name": "container_1",
+        "tab": "c75c71a484171217",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2e4cd91fbe8123bf",
+        "type": "ui_group",
+        "name": "container_2",
+        "tab": "c75c71a484171217",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1de1620a42f9d003",
+        "type": "ui_group",
+        "name": "container_3",
+        "tab": "c75c71a484171217",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85a7f4cff3441bcf",
+        "type": "ui_group",
+        "name": "container_4",
+        "tab": "c75c71a484171217",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "402d722259126c8b",
+        "type": "ui_group",
+        "name": "container_5",
+        "tab": "c75c71a484171217",
+        "order": 6,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a130c9ffe360637",
+        "type": "ui_group",
+        "name": "container_6",
+        "tab": "c75c71a484171217",
+        "order": 7,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a36a0e9b6fbc9132",
+        "type": "ui_group",
+        "name": "container_7",
+        "tab": "c75c71a484171217",
+        "order": 8,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "36af154aa5adc422",
         "type": "mqtt in",
         "z": "f6f2187d.f17ca8",
@@ -176,7 +332,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 80,
+        "y": 40,
         "wires": [
             [
                 "1cce0f2e8c2c4263"
@@ -197,7 +353,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 140,
+        "y": 100,
         "wires": [
             [
                 "1d8ac2c78b3ab322"
@@ -218,7 +374,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 140,
-        "y": 200,
+        "y": 160,
         "wires": [
             [
                 "bc25f5fd78939d32"
@@ -237,11 +393,10 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 80,
+        "y": 40,
         "wires": [
             [
-                "b7f1f0dbe69c9dcd",
-                "3a141bcc3294c255"
+                "b7f1f0dbe69c9dcd"
             ]
         ]
     },
@@ -257,7 +412,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 140,
+        "y": 100,
         "wires": [
             [
                 "b7f1f0dbe69c9dcd"
@@ -276,7 +431,7 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 200,
+        "y": 160,
         "wires": [
             [
                 "b7f1f0dbe69c9dcd"
@@ -402,23 +557,6 @@
                 "54e9e0e4651b12b9"
             ]
         ]
-    },
-    {
-        "id": "3a141bcc3294c255",
-        "type": "debug",
-        "z": "f6f2187d.f17ca8",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "5a45ad35f0c5d14b",
@@ -553,8 +691,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 910,
-        "y": 280,
+        "x": 950,
+        "y": 320,
         "wires": [
             [
                 "293d02c7fd1294b3"
@@ -574,8 +712,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 900,
-        "y": 340,
+        "x": 940,
+        "y": 380,
         "wires": [
             [
                 "1d1e4c0e47f43cc7"
@@ -595,8 +733,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 880,
-        "y": 400,
+        "x": 920,
+        "y": 440,
         "wires": [
             [
                 "5e858d441c521825"
@@ -614,8 +752,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
-        "y": 280,
+        "x": 1190,
+        "y": 320,
         "wires": [
             [
                 "1e64b1d01bc7627a"
@@ -633,8 +771,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 340,
+        "x": 1180,
+        "y": 380,
         "wires": [
             [
                 "1e64b1d01bc7627a"
@@ -652,8 +790,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
-        "y": 400,
+        "x": 1160,
+        "y": 440,
         "wires": [
             [
                 "1e64b1d01bc7627a"
@@ -673,8 +811,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 910,
-        "y": 460,
+        "x": 950,
+        "y": 580,
         "wires": [
             [
                 "2664d0cd225913af"
@@ -694,8 +832,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 900,
-        "y": 520,
+        "x": 940,
+        "y": 640,
         "wires": [
             [
                 "d470a31dad8eebcf"
@@ -715,8 +853,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 880,
-        "y": 580,
+        "x": 920,
+        "y": 700,
         "wires": [
             [
                 "7db670d12ce7dc69"
@@ -734,8 +872,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
-        "y": 460,
+        "x": 1190,
+        "y": 580,
         "wires": [
             [
                 "02a5735863b0e872"
@@ -753,8 +891,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 520,
+        "x": 1180,
+        "y": 640,
         "wires": [
             [
                 "02a5735863b0e872"
@@ -772,8 +910,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
-        "y": 580,
+        "x": 1160,
+        "y": 700,
         "wires": [
             [
                 "02a5735863b0e872"
@@ -794,7 +932,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 170,
-        "y": 820,
+        "y": 860,
         "wires": [
             [
                 "02aaf7e11040a3e4"
@@ -815,7 +953,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 160,
-        "y": 880,
+        "y": 920,
         "wires": [
             [
                 "07b5150528205118"
@@ -836,7 +974,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 140,
-        "y": 940,
+        "y": 980,
         "wires": [
             [
                 "5828d37da4c519e9"
@@ -855,7 +993,7 @@
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 820,
+        "y": 860,
         "wires": [
             [
                 "c37183b0e163bb9d"
@@ -874,7 +1012,7 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 880,
+        "y": 920,
         "wires": [
             [
                 "c37183b0e163bb9d"
@@ -893,7 +1031,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 940,
+        "y": 980,
         "wires": [
             [
                 "c37183b0e163bb9d"
@@ -913,8 +1051,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 890,
-        "y": 660,
+        "x": 130,
+        "y": 1180,
         "wires": [
             [
                 "fa8174e05cd0888b"
@@ -934,8 +1072,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 910,
-        "y": 720,
+        "x": 150,
+        "y": 1240,
         "wires": [
             [
                 "977f702e72771fce"
@@ -955,8 +1093,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 900,
-        "y": 780,
+        "x": 140,
+        "y": 1300,
         "wires": [
             [
                 "6ffd9d6b0f318d00"
@@ -974,8 +1112,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 660,
+        "x": 370,
+        "y": 1180,
         "wires": [
             [
                 "8a641df98f254df7"
@@ -993,8 +1131,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 720,
+        "x": 380,
+        "y": 1240,
         "wires": [
             [
                 "8a641df98f254df7"
@@ -1012,8 +1150,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 780,
+        "x": 370,
+        "y": 1300,
         "wires": [
             [
                 "8a641df98f254df7"
@@ -1033,8 +1171,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 150,
-        "y": 1060,
+        "x": 130,
+        "y": 1460,
         "wires": [
             [
                 "920fcb913000e4a7"
@@ -1054,8 +1192,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 170,
-        "y": 1120,
+        "x": 150,
+        "y": 1520,
         "wires": [
             [
                 "b6fad86d3e72fe88"
@@ -1075,8 +1213,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 160,
-        "y": 1180,
+        "x": 140,
+        "y": 1580,
         "wires": [
             [
                 "2857692b1256dd00"
@@ -1094,8 +1232,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 1060,
+        "x": 370,
+        "y": 1460,
         "wires": [
             [
                 "0a924c856e480b4d"
@@ -1113,8 +1251,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 1120,
+        "x": 380,
+        "y": 1520,
         "wires": [
             [
                 "0a924c856e480b4d"
@@ -1132,8 +1270,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 1180,
+        "x": 370,
+        "y": 1580,
         "wires": [
             [
                 "0a924c856e480b4d"
@@ -1153,8 +1291,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 890,
-        "y": 860,
+        "x": 1010,
+        "y": 1180,
         "wires": [
             [
                 "40b61c52ec2aa50d"
@@ -1174,8 +1312,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 910,
-        "y": 920,
+        "x": 1030,
+        "y": 1240,
         "wires": [
             [
                 "524dcd4d5099733d"
@@ -1195,8 +1333,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 900,
-        "y": 980,
+        "x": 1020,
+        "y": 1300,
         "wires": [
             [
                 "6dbb4fd71f75c782"
@@ -1214,8 +1352,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 860,
+        "x": 1250,
+        "y": 1180,
         "wires": [
             [
                 "a457a7bf86b597fd"
@@ -1233,8 +1371,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 920,
+        "x": 1260,
+        "y": 1240,
         "wires": [
             [
                 "a457a7bf86b597fd"
@@ -1252,8 +1390,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 980,
+        "x": 1250,
+        "y": 1300,
         "wires": [
             [
                 "a457a7bf86b597fd"
@@ -1267,7 +1405,7 @@
         "name": "info",
         "info": "environmental generated info",
         "x": 550,
-        "y": 200,
+        "y": 160,
         "wires": []
     },
     {
@@ -1287,7 +1425,7 @@
         "name": "solar panel 4",
         "info": "generated info about solar Panel 4",
         "x": 610,
-        "y": 940,
+        "y": 980,
         "wires": []
     },
     {
@@ -1296,8 +1434,8 @@
         "z": "f6f2187d.f17ca8",
         "name": "wind turbine 1",
         "info": "generated info about wind turbine 1",
-        "x": 610,
-        "y": 1180,
+        "x": 590,
+        "y": 1580,
         "wires": []
     },
     {
@@ -1316,8 +1454,8 @@
         "z": "f6f2187d.f17ca8",
         "name": "wind turbine 2",
         "info": "generated info about wind turbine 2",
-        "x": 1370,
-        "y": 980,
+        "x": 1490,
+        "y": 1300,
         "wires": []
     },
     {
@@ -1326,8 +1464,8 @@
         "z": "f6f2187d.f17ca8",
         "name": "wind turbine 0",
         "info": "generated info about wind turbine 0",
-        "x": 1370,
-        "y": 780,
+        "x": 610,
+        "y": 1300,
         "wires": []
     },
     {
@@ -1336,8 +1474,8 @@
         "z": "f6f2187d.f17ca8",
         "name": "solar panel 3",
         "info": "generated info about solar Panel 3",
-        "x": 1370,
-        "y": 580,
+        "x": 1410,
+        "y": 700,
         "wires": []
     },
     {
@@ -1346,8 +1484,8 @@
         "z": "f6f2187d.f17ca8",
         "name": "solar panel 2",
         "info": "generated info about solar Panel 2",
-        "x": 1390,
-        "y": 400,
+        "x": 1430,
+        "y": 440,
         "wires": []
     },
     {
@@ -1365,7 +1503,7 @@
         "org": "univaq",
         "bucket": "iot",
         "x": 600,
-        "y": 140,
+        "y": 100,
         "wires": []
     },
     {
@@ -1374,7 +1512,7 @@
         "z": "f6f2187d.f17ca8",
         "influxdb": "7ae4df28c6b53877",
         "name": "",
-        "measurement": "SolarPanel0",
+        "measurement": "solar_panel_0",
         "precision": "",
         "retentionPolicy": "",
         "database": "database",
@@ -1382,7 +1520,7 @@
         "retentionPolicyV18Flux": "",
         "org": "univaq",
         "bucket": "iot",
-        "x": 680,
+        "x": 690,
         "y": 380,
         "wires": []
     },
@@ -1392,7 +1530,7 @@
         "z": "f6f2187d.f17ca8",
         "influxdb": "7ae4df28c6b53877",
         "name": "",
-        "measurement": "SolarPanel1",
+        "measurement": "solar_panel_1",
         "precision": "",
         "retentionPolicy": "",
         "database": "database",
@@ -1400,7 +1538,7 @@
         "retentionPolicyV18Flux": "",
         "org": "univaq",
         "bucket": "iot",
-        "x": 680,
+        "x": 690,
         "y": 640,
         "wires": []
     },
@@ -1410,7 +1548,7 @@
         "z": "f6f2187d.f17ca8",
         "influxdb": "7ae4df28c6b53877",
         "name": "",
-        "measurement": "SolarPanel2",
+        "measurement": "solar_panel_2",
         "precision": "",
         "retentionPolicy": "",
         "database": "database",
@@ -1418,8 +1556,8 @@
         "retentionPolicyV18Flux": "",
         "org": "univaq",
         "bucket": "iot",
-        "x": 1420,
-        "y": 340,
+        "x": 1470,
+        "y": 380,
         "wires": []
     },
     {
@@ -1428,7 +1566,7 @@
         "z": "f6f2187d.f17ca8",
         "influxdb": "7ae4df28c6b53877",
         "name": "",
-        "measurement": "SolarPanel3",
+        "measurement": "solar_panel_3",
         "precision": "",
         "retentionPolicy": "",
         "database": "database",
@@ -1436,8 +1574,8 @@
         "retentionPolicyV18Flux": "",
         "org": "univaq",
         "bucket": "iot",
-        "x": 1420,
-        "y": 520,
+        "x": 1470,
+        "y": 640,
         "wires": []
     },
     {
@@ -1446,7 +1584,7 @@
         "z": "f6f2187d.f17ca8",
         "influxdb": "7ae4df28c6b53877",
         "name": "",
-        "measurement": "SolarPanel4",
+        "measurement": "solar_panel_4",
         "precision": "",
         "retentionPolicy": "",
         "database": "database",
@@ -1454,8 +1592,8 @@
         "retentionPolicyV18Flux": "",
         "org": "univaq",
         "bucket": "iot",
-        "x": 680,
-        "y": 880,
+        "x": 650,
+        "y": 920,
         "wires": []
     },
     {
@@ -1464,7 +1602,7 @@
         "z": "f6f2187d.f17ca8",
         "influxdb": "7ae4df28c6b53877",
         "name": "",
-        "measurement": "windTurbine0",
+        "measurement": "wind_turbine_0",
         "precision": "",
         "retentionPolicy": "",
         "database": "database",
@@ -1472,8 +1610,8 @@
         "retentionPolicyV18Flux": "",
         "org": "univaq",
         "bucket": "iot",
-        "x": 1420,
-        "y": 720,
+        "x": 670,
+        "y": 1240,
         "wires": []
     },
     {
@@ -1482,7 +1620,7 @@
         "z": "f6f2187d.f17ca8",
         "influxdb": "7ae4df28c6b53877",
         "name": "",
-        "measurement": "windTurbine1",
+        "measurement": "wind_turbine_1",
         "precision": "",
         "retentionPolicy": "",
         "database": "database",
@@ -1490,8 +1628,8 @@
         "retentionPolicyV18Flux": "",
         "org": "univaq",
         "bucket": "iot",
-        "x": 680,
-        "y": 1120,
+        "x": 670,
+        "y": 1520,
         "wires": []
     },
     {
@@ -1500,7 +1638,7 @@
         "z": "f6f2187d.f17ca8",
         "influxdb": "7ae4df28c6b53877",
         "name": "",
-        "measurement": "windTurbine2",
+        "measurement": "wind_turbine_2",
         "precision": "",
         "retentionPolicy": "",
         "database": "database",
@@ -1508,8 +1646,1326 @@
         "retentionPolicyV18Flux": "",
         "org": "univaq",
         "bucket": "iot",
-        "x": 1420,
-        "y": 920,
+        "x": 1530,
+        "y": 1220,
         "wires": []
+    },
+    {
+        "id": "919e9abefb51544f",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "solarPanel/0/shield",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 500,
+        "wires": [
+            [
+                "e2e7599cd87f0a64"
+            ]
+        ]
+    },
+    {
+        "id": "e2e7599cd87f0a64",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg shield",
+        "func": "msg.payload = { shield: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "54e9e0e4651b12b9"
+            ]
+        ]
+    },
+    {
+        "id": "a45b3c4e277b4456",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg shield",
+        "func": "msg.payload = { shield: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 760,
+        "wires": [
+            [
+                "0ab0f2c72e063419"
+            ]
+        ]
+    },
+    {
+        "id": "f0b1622cc8cdc554",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "solarPanel/1/shield",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "a45b3c4e277b4456"
+            ]
+        ]
+    },
+    {
+        "id": "123f534a6468ed92",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg shield",
+        "func": "msg.payload = { shield: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1040,
+        "wires": [
+            [
+                "c37183b0e163bb9d"
+            ]
+        ]
+    },
+    {
+        "id": "c9c5dcaabe4991b9",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "solarPanel/4/shield",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1040,
+        "wires": [
+            [
+                "123f534a6468ed92"
+            ]
+        ]
+    },
+    {
+        "id": "a4a4fab91850b08f",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "solarPanel/2/shield",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 500,
+        "wires": [
+            [
+                "4d28f020d5cdc64f"
+            ]
+        ]
+    },
+    {
+        "id": "4d28f020d5cdc64f",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg shield",
+        "func": "msg.payload = { shield: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 500,
+        "wires": [
+            [
+                "1e64b1d01bc7627a"
+            ]
+        ]
+    },
+    {
+        "id": "a11a25bc6e215c41",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "solarPanel/3/shield",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 930,
+        "y": 780,
+        "wires": [
+            [
+                "5cd110b336307144"
+            ]
+        ]
+    },
+    {
+        "id": "5cd110b336307144",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg shield",
+        "func": "msg.payload = { shield: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 780,
+        "wires": [
+            [
+                "02a5735863b0e872"
+            ]
+        ]
+    },
+    {
+        "id": "0384f65c1d9cadec",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "windTurbine/0/running",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 1360,
+        "wires": [
+            [
+                "849dd76184ecc0d2"
+            ]
+        ]
+    },
+    {
+        "id": "849dd76184ecc0d2",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg running",
+        "func": "msg.payload = { running: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1360,
+        "wires": [
+            [
+                "8a641df98f254df7"
+            ]
+        ]
+    },
+    {
+        "id": "c6e1917f7f35e26d",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "windTurbine/1/running",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 1640,
+        "wires": [
+            [
+                "6d0226c6a11441f5"
+            ]
+        ]
+    },
+    {
+        "id": "6d0226c6a11441f5",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg running",
+        "func": "msg.payload = { running: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1640,
+        "wires": [
+            [
+                "0a924c856e480b4d"
+            ]
+        ]
+    },
+    {
+        "id": "968f229742127c1a",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "windTurbine/2/running",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1020,
+        "y": 1360,
+        "wires": [
+            [
+                "21b5267e598a4efb"
+            ]
+        ]
+    },
+    {
+        "id": "21b5267e598a4efb",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg running",
+        "func": "msg.payload = { running: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 1360,
+        "wires": [
+            [
+                "a457a7bf86b597fd"
+            ]
+        ]
+    },
+    {
+        "id": "5bb46c322e3d7d27",
+        "type": "mqtt in",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "solarPanel/0/shield",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "272b6e2f2f26de77"
+            ]
+        ]
+    },
+    {
+        "id": "11b068559c69c81a",
+        "type": "ui_button",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "group": "abd1a74c2aa8c24b",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "{{value}}",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "4a7c4407eb28c873"
+            ]
+        ]
+    },
+    {
+        "id": "272b6e2f2f26de77",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "custom css",
+        "func": "const value = msg.payload;\nif (value == 1) {\n    msg.text = \"ON\";\n    msg.background = \"green\";\n} else {\n    msg.text = \"OFF\";\n    msg.background = \"red\";\n}\nmsg.topic = (parseInt(value) + 1) % 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 60,
+        "wires": [
+            [
+                "11b068559c69c81a"
+            ]
+        ]
+    },
+    {
+        "id": "10be2da00a9d1feb",
+        "type": "ui_text",
+        "z": "5c888227d3c31d09",
+        "group": "abd1a74c2aa8c24b",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Shield 0",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "698370ecb51ea46b",
+        "type": "mqtt out",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "3f89dc9d9f939810",
+        "x": 1030,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4a7c4407eb28c873",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "pattern 0",
+        "func": "msg.payload = msg.topic;\nmsg.topic = \"solarPanel/0/shield\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 60,
+        "wires": [
+            [
+                "698370ecb51ea46b"
+            ]
+        ]
+    },
+    {
+        "id": "732fc137491750a0",
+        "type": "mqtt in",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "solarPanel/1/shield",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "d1dc5395fe96a46a"
+            ]
+        ]
+    },
+    {
+        "id": "9e5be21b8c958639",
+        "type": "ui_button",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "group": "afd0e4f8b5dd7182",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "{{value}}",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "fda87bbc74cf045c"
+            ]
+        ]
+    },
+    {
+        "id": "d1dc5395fe96a46a",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "custom css",
+        "func": "const value = msg.payload;\nif (value == 1) {\n    msg.text = \"ON\";\n    msg.background = \"green\";\n} else {\n    msg.text = \"OFF\";\n    msg.background = \"red\";\n}\nmsg.topic = (parseInt(value) + 1) % 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "9e5be21b8c958639"
+            ]
+        ]
+    },
+    {
+        "id": "2c4b7b092274a062",
+        "type": "ui_text",
+        "z": "5c888227d3c31d09",
+        "group": "afd0e4f8b5dd7182",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Shield 1",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "fda87bbc74cf045c",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "pattern 1",
+        "func": "msg.payload = msg.topic;\nmsg.topic = \"solarPanel/1/shield\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [
+                "698370ecb51ea46b"
+            ]
+        ]
+    },
+    {
+        "id": "65159aa4db8654f9",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "pattern 2",
+        "func": "msg.payload = msg.topic;\nmsg.topic = \"solarPanel/2/shield\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "698370ecb51ea46b"
+            ]
+        ]
+    },
+    {
+        "id": "499eac97bd4d7ad4",
+        "type": "ui_button",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "group": "2e4cd91fbe8123bf",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "{{value}}",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "65159aa4db8654f9"
+            ]
+        ]
+    },
+    {
+        "id": "a9c713ab41e06428",
+        "type": "ui_text",
+        "z": "5c888227d3c31d09",
+        "group": "2e4cd91fbe8123bf",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Shield 2",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2b422f1b9d9f6e6e",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "custom css",
+        "func": "const value = msg.payload;\nif (value == 1) {\n    msg.text = \"ON\";\n    msg.background = \"green\";\n} else {\n    msg.text = \"OFF\";\n    msg.background = \"red\";\n}\nmsg.topic = (parseInt(value) + 1) % 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "499eac97bd4d7ad4"
+            ]
+        ]
+    },
+    {
+        "id": "0c250649a6bb8fe5",
+        "type": "mqtt in",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "solarPanel/2/shield",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "2b422f1b9d9f6e6e"
+            ]
+        ]
+    },
+    {
+        "id": "83bf8ce4edf26165",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "pattern 3",
+        "func": "msg.payload = msg.topic;\nmsg.topic = \"solarPanel/3/shield\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 400,
+        "wires": [
+            [
+                "698370ecb51ea46b"
+            ]
+        ]
+    },
+    {
+        "id": "9222268c09a1770b",
+        "type": "ui_button",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "group": "1de1620a42f9d003",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "{{value}}",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "83bf8ce4edf26165"
+            ]
+        ]
+    },
+    {
+        "id": "430329ce86d9958a",
+        "type": "ui_text",
+        "z": "5c888227d3c31d09",
+        "group": "1de1620a42f9d003",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Shield 3",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ef65adabbe42a38e",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "custom css",
+        "func": "const value = msg.payload;\nif (value == 1) {\n    msg.text = \"ON\";\n    msg.background = \"green\";\n} else {\n    msg.text = \"OFF\";\n    msg.background = \"red\";\n}\nmsg.topic = (parseInt(value) + 1) % 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "9222268c09a1770b"
+            ]
+        ]
+    },
+    {
+        "id": "cb1a8d7b3c04bef2",
+        "type": "mqtt in",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "solarPanel/3/shield",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "ef65adabbe42a38e"
+            ]
+        ]
+    },
+    {
+        "id": "b4b7d3830b2631f1",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "pattern 4",
+        "func": "msg.payload = msg.topic;\nmsg.topic = \"solarPanel/4/shield\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 500,
+        "wires": [
+            [
+                "698370ecb51ea46b"
+            ]
+        ]
+    },
+    {
+        "id": "39b0f5f38df6bc66",
+        "type": "ui_button",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "group": "85a7f4cff3441bcf",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "{{value}}",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 520,
+        "wires": [
+            [
+                "b4b7d3830b2631f1"
+            ]
+        ]
+    },
+    {
+        "id": "4e1b97a5394669f5",
+        "type": "ui_text",
+        "z": "5c888227d3c31d09",
+        "group": "85a7f4cff3441bcf",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Shield 4",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "553570bf3c5f7879",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "custom css",
+        "func": "const value = msg.payload;\nif (value == 1) {\n    msg.text = \"ON\";\n    msg.background = \"green\";\n} else {\n    msg.text = \"OFF\";\n    msg.background = \"red\";\n}\nmsg.topic = (parseInt(value) + 1) % 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 500,
+        "wires": [
+            [
+                "39b0f5f38df6bc66"
+            ]
+        ]
+    },
+    {
+        "id": "fea021c422b49d87",
+        "type": "mqtt in",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "solarPanel/4/shield",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 500,
+        "wires": [
+            [
+                "553570bf3c5f7879"
+            ]
+        ]
+    },
+    {
+        "id": "5a2b028b3047e2a9",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "pattern 0",
+        "func": "msg.payload = msg.topic;\nmsg.topic = \"windTurbine/0/running\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 660,
+        "wires": [
+            [
+                "698370ecb51ea46b"
+            ]
+        ]
+    },
+    {
+        "id": "04a046b4bb90e93b",
+        "type": "ui_button",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "group": "402d722259126c8b",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "{{value}}",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 680,
+        "wires": [
+            [
+                "5a2b028b3047e2a9"
+            ]
+        ]
+    },
+    {
+        "id": "87bf81339019b70d",
+        "type": "ui_text",
+        "z": "5c888227d3c31d09",
+        "group": "402d722259126c8b",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Running 0",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "14bb99a18908a201",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "custom css",
+        "func": "const value = msg.payload;\nif (value == 1) {\n    msg.text = \"ON\";\n    msg.background = \"green\";\n} else {\n    msg.text = \"OFF\";\n    msg.background = \"red\";\n}\nmsg.topic = (parseInt(value) + 1) % 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 660,
+        "wires": [
+            [
+                "04a046b4bb90e93b"
+            ]
+        ]
+    },
+    {
+        "id": "148ea9be50881eb4",
+        "type": "mqtt in",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "windTurbine/0/running",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "14bb99a18908a201"
+            ]
+        ]
+    },
+    {
+        "id": "f1df95574867b1aa",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "pattern 1",
+        "func": "msg.payload = msg.topic;\nmsg.topic = \"windTurbine/1/running\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 780,
+        "wires": [
+            [
+                "698370ecb51ea46b"
+            ]
+        ]
+    },
+    {
+        "id": "5677ef0755455c48",
+        "type": "ui_button",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "group": "1a130c9ffe360637",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "{{value}}",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 800,
+        "wires": [
+            [
+                "f1df95574867b1aa"
+            ]
+        ]
+    },
+    {
+        "id": "20ade4f01340dcad",
+        "type": "ui_text",
+        "z": "5c888227d3c31d09",
+        "group": "1a130c9ffe360637",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Running 1",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "77bcb0ef0a77036c",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "custom css",
+        "func": "const value = msg.payload;\nif (value == 1) {\n    msg.text = \"ON\";\n    msg.background = \"green\";\n} else {\n    msg.text = \"OFF\";\n    msg.background = \"red\";\n}\nmsg.topic = (parseInt(value) + 1) % 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 780,
+        "wires": [
+            [
+                "5677ef0755455c48"
+            ]
+        ]
+    },
+    {
+        "id": "1f60ed8c2dfe61e6",
+        "type": "mqtt in",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "windTurbine/1/running",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "77bcb0ef0a77036c"
+            ]
+        ]
+    },
+    {
+        "id": "57a891b9cb293e51",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "pattern 2",
+        "func": "msg.payload = msg.topic;\nmsg.topic = \"windTurbine/2/running\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 920,
+        "wires": [
+            [
+                "698370ecb51ea46b"
+            ]
+        ]
+    },
+    {
+        "id": "2c492b1e43910864",
+        "type": "ui_button",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "group": "a36a0e9b6fbc9132",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "{{text}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "",
+        "payload": "{{value}}",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 940,
+        "wires": [
+            [
+                "57a891b9cb293e51"
+            ]
+        ]
+    },
+    {
+        "id": "356849fb8a1d7d8a",
+        "type": "ui_text",
+        "z": "5c888227d3c31d09",
+        "group": "a36a0e9b6fbc9132",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "Running 2",
+        "layout": "row-left",
+        "className": "",
+        "x": 510,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "4ccde2df7b84c0dd",
+        "type": "function",
+        "z": "5c888227d3c31d09",
+        "name": "custom css",
+        "func": "const value = msg.payload;\nif (value == 1) {\n    msg.text = \"ON\";\n    msg.background = \"green\";\n} else {\n    msg.text = \"OFF\";\n    msg.background = \"red\";\n}\nmsg.topic = (parseInt(value) + 1) % 2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 920,
+        "wires": [
+            [
+                "2c492b1e43910864"
+            ]
+        ]
+    },
+    {
+        "id": "cf955a574162ac9e",
+        "type": "mqtt in",
+        "z": "5c888227d3c31d09",
+        "name": "",
+        "topic": "windTurbine/2/running",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 920,
+        "wires": [
+            [
+                "4ccde2df7b84c0dd"
+            ]
+        ]
+    },
+    {
+        "id": "2a61ab7d3eaaa0eb",
+        "type": "http request",
+        "z": "9b141d136e8f2a6b",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "7606b59284554a52"
+            ]
+        ]
+    },
+    {
+        "id": "7a114d05fac7639c",
+        "type": "ui_form",
+        "z": "9b141d136e8f2a6b",
+        "name": "",
+        "label": "",
+        "group": "389563e852d78106",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Light",
+                "value": "light",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "light": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 70,
+        "y": 100,
+        "wires": [
+            [
+                "cbf0c933ca424afc"
+            ]
+        ]
+    },
+    {
+        "id": "cbf0c933ca424afc",
+        "type": "function",
+        "z": "9b141d136e8f2a6b",
+        "name": "getLight",
+        "func": "const light = msg.payload.light;\nmsg.url = 'http://172.20.0.105:5000/predictions/solar/' + light;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "2a61ab7d3eaaa0eb"
+            ]
+        ]
+    },
+    {
+        "id": "7606b59284554a52",
+        "type": "function",
+        "z": "9b141d136e8f2a6b",
+        "name": "parseInt",
+        "func": "let value = parseInt(msg.payload);\nif(value > 100) value = 100;\nif(value < 0) value = 0;\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "5d83f5d6955570cb"
+            ]
+        ]
+    },
+    {
+        "id": "5d83f5d6955570cb",
+        "type": "ui_gauge",
+        "z": "9b141d136e8f2a6b",
+        "name": "",
+        "group": "389563e852d78106",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Production",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ca3838",
+            "#f0b400",
+            "#00b500"
+        ],
+        "seg1": "50",
+        "seg2": "80",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cff231fbda57dd51",
+        "type": "ui_template",
+        "z": "d41a571824d79944",
+        "group": "cd00130e58b07552",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n    <style>\n        a {display: block; text-align: center; padding: 5px; background-color: #0094CE; margin-top: 15px; color: white; text-decoration: none;}\n    </style>\n    <a href=\"http://localhost:3000/d/OHEMwUhVk/solar-panel?orgId=1&refresh=30s\" target=\"_blank\">Solar Panel</a>\n    <a href=\"http://localhost:3000/d/XIlFwUhVz/wind-turbine?orgId=1&refresh=30s\" target=\"_blank\">Wind Turbine</a>\n    <a href=\"http://localhost:3000/d/WglTw82Vz/system?orgId=1&refresh=30s\" target=\"_blank\">System</a>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 220,
+        "y": 80,
+        "wires": [
+            []
+        ]
     }
 ]
