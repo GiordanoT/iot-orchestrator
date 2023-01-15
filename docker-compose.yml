@@ -16,7 +16,7 @@ services:
         ipv4_address: 172.20.0.100
 
   sensors:
-    image: iot_sensors:latest
+    image: micheleintrevado/sensors:latest
     container_name: sensors
     restart: always
     networks:
@@ -39,7 +39,7 @@ services:
       - ./influxdb/config/:/etc/influxdb2
 
   predictions:
-    image: iot_predictions:latest
+    image: micheleintrevado/predictions:latest
     container_name: predictions
     restart: always
     ports:
