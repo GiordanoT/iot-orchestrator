@@ -2,7 +2,7 @@
 
 ## System Architecture
 
-<img title="System Architecture" alt="System Architecture" src="C:/Users/Martina/Desktop/System_Architecture.png">
+<img title="System Architecture" alt="System Architecture" src="/Desktop/System_Architecture.png">
 
 Our system architecture includes wind turbines and solar panels connected to sensors. 
 
