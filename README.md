@@ -2,7 +2,7 @@
 
 ## System Architecture
 
-![This is an image](C:/Users/Martina/Desktop/Laurea Magistrale/Primo Semestre - I anno/Software Engineering for the Internet of Things/Img/System Architecture.png)
+<img src="/Desktop/System_Architecture.png" alt="SystemArchitectureIoT" style="height: 200px; width:400px;"/>
 
 Our system architecture includes wind turbines and solar panels connected to sensors. 
 
