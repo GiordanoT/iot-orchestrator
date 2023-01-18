@@ -2,7 +2,7 @@
 
 ## System Architecture
 
-<img title="System Architecture" alt="System Architecture" src="/Desktop/System_Architecture.png">
+![https://github.com/micheleintrevado/SE4IOT/](https://github.com/micheleintrevado/SE4IOT/blob/main/System_Architecture.png)
 
 Our system architecture includes wind turbines and solar panels connected to sensors. 
 
