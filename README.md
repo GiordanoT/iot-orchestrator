@@ -2,9 +2,7 @@
 
 ## System Architecture
 
-![System Architecture](/Desktop/System_Architecture.png "System Architecture IoT")
-
-<!-- <img src="/Desktop/System_Architecture.png" alt="SystemArchitectureIoT" style="height: 200px; width:400px;"/> -->
+![System Architecture](C:/Users/Martina/Desktop/System_Architecture.png "System Architecture IoT")
 
 Our system architecture includes wind turbines and solar panels connected to sensors. 
 
