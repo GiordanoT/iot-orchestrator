@@ -1,5 +1,33 @@
 # Solar Panels and Wind Turbines: to the future
 
+## Introduction
+
+Our system takes care of monitoring different values coming from solar panels and wind turbines.
+Wind farms consist of many individual wind turbines, which are connected to the electricity transmission grid. Wind energy is primarily the use of wind turbines to generate electricity. It is a popular, sustainable, renewable energy source that has far less impact on the environment than the burning of fossil fuels. Indeed, it aims to improve energy security and reduce the consumption of coal due to growing concerns about climate change and air pollution. Through IoT connectivity, wind farm developers can effectively monitor the performance of wind turbines and related connected devices installed in remote locations without requiring any manual intervention.
+
+Also, solar panels produce energy and by combining them with IoT technology it is possible to maximize energy production with a consequent reduction in costs and energy consumption.
+It should also be considered that solar systems are constantly exposed to atmospheric agents and over the years, problems such as accumulation of dirt, voltage drops, and malfunctioning of the components can compromise the optimal performance of the system, affecting the effective production of power. For these reasons, the most recent models of systems are combined with monitoring systems based on IoT technology capable of detecting the entire system’s performance, identifying any malfunctions, and, consequently, increasing its efficiency and energy production.
+
+Monitoring systems, therefore, represent a fundamental innovation to ensure optimal plant performance but can also offer other benefits. In addition to mapping energy production in real-time, they collect data and parameters regarding self-consumption and on-site exchange. In this way, we will always be aware of how much energy our system produces and how it is used.
+The IoT applied to the solar panel also allows you to keep track of environmental parameters, such as the presence of rain, temperature, and solar radiation, allowing you to prevent any congestion or malfunctions of the system, for example by limiting the production of the system on rainy days or, conversely, maximizing the power on days characterized by low solar radiation.
+
+## Technology Used
++ MQTT
+
+The protocol used by the Mosquitto broker is MQTT. We used this messaging protocol to get data from sensors. Then we loaded the data via python to send it to the other components where the data can be fetched and processed from.
+
++ Node-RED 
+
+We used Node-RED to process the output data from MQTT. We also created the data flow through the use of Node-RED.
+
++ InfluxDB 
+
+InfluxDB is used to store the continuous flow of data coming and going through Node-RED. The main benefit of using InfluxDB is the ease with which data can be sorted and found. 
+
++ Grafana (Dashboard) 
+
+We used Grafana to visualize and understand the data. The main benefit of Grafana that we found was that, in addition to providing better visualization, it provides a way to create multiple dashboards at once which allowed us to better manage the information.
+
 ## System Architecture
 
 ![https://github.com/micheleintrevado/SE4IOT/](https://github.com/micheleintrevado/SE4IOT/blob/main/System_Architecture.png)
