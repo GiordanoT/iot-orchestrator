@@ -1,5 +1,7 @@
 # Solar Panels and Wind Turbines: to the future
 
+## System Architecture
+
 ![This is an image](C:/Users/Martina/Desktop/Laurea Magistrale/Primo Semestre - I anno/Software Engineering for the Internet of Things/Img/System Architecture.png)
 
 Our system architecture includes wind turbines and solar panels connected to sensors. 
@@ -19,3 +21,9 @@ The gateway component is a Docker container that runs the Node-RED programming t
 **DATA PREDICTIONS** 
 
 The data predictions component is a Docker container that runs a Flask (python) project dedicated to data predictions. This container contains a machine-learning model that is trained using the scikit-learn library. The model can predict the energy production of the solar panel based on the light level. In this setup, the Flask project creates an endpoint for a GET request, which allows the Node-RED container to access the prediction by making a GET request to this endpoint. For instance, the HTTP request: “GET http://localhost:5000/predictions/solar/3”, will produce an HTTP response in which we have a predicted value near 30.
+
+## Insturctions to use the system
++ git clone https://github.com/GiordanoT/iot-orchestrator.git.
++	In the directory run -> docker-compose up.
++	Only at the first running you need to access Grafana (admin:admin) (localhost:3000).
++	Go to localhost:1880/ui to see the application.
