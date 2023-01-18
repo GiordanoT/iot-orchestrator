@@ -1475,7 +1475,7 @@
         "z": "f6f2187d.f17ca8",
         "name": "info",
         "info": "environmental generated info",
-        "x": 550,
+        "x": 570,
         "y": 180,
         "wires": []
     },
@@ -1574,7 +1574,7 @@
         "org": "univaq",
         "bucket": "iot",
         "x": 600,
-        "y": 120,
+        "y": 140,
         "wires": []
     },
     {
@@ -2042,6 +2042,46 @@
         ]
     },
     {
+        "id": "c2bf2352239ed6c3",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "system/light",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "3f89dc9d9f939810",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "65e72d9c0c267683"
+            ]
+        ]
+    },
+    {
+        "id": "65e72d9c0c267683",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "msg light",
+        "func": "msg.payload = { light: msg.payload }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 240,
+        "wires": [
+            [
+                "b7f1f0dbe69c9dcd"
+            ]
+        ]
+    },
+    {
         "id": "5bb46c322e3d7d27",
         "type": "mqtt in",
         "z": "5c888227d3c31d09",
@@ -2119,7 +2159,7 @@
         "height": "1",
         "name": "",
         "label": "",
-        "format": "Solar Panel 0",
+        "format": "Solar Panel 0 Shield",
         "layout": "row-left",
         "className": "",
         "x": 510,
@@ -2241,7 +2281,7 @@
         "height": "1",
         "name": "",
         "label": "",
-        "format": "Solar Panel 1",
+        "format": "Solar Panel 1 Shield",
         "layout": "row-left",
         "className": "",
         "x": 510,
@@ -2324,7 +2364,7 @@
         "height": "1",
         "name": "",
         "label": "",
-        "format": "Solar Panel 2",
+        "format": "Solar Panel 2 Shield",
         "layout": "row-left",
         "className": "",
         "x": 510,
@@ -2428,7 +2468,7 @@
         "height": "1",
         "name": "",
         "label": "",
-        "format": "Solar Panel 3",
+        "format": "Solar Panel 3 Shield",
         "layout": "row-left",
         "className": "",
         "x": 510,
@@ -2532,7 +2572,7 @@
         "height": "1",
         "name": "",
         "label": "",
-        "format": "Solar Panel 4",
+        "format": "Solar Panel 4 Shield",
         "layout": "row-left",
         "className": "",
         "x": 510,
@@ -3166,31 +3206,10 @@
         ]
     },
     {
-        "id": "65ec6f8eec215e73",
-        "type": "ui_template",
-        "z": "d41a571824d79944",
-        "group": "1f74b06d4dff1469",
-        "name": "",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "format": "<iframe src=\"http://localhost:3000/d-solo/WglTw82Vz/system?orgId=1&refresh=30s&theme=light&panelId=4\"\nwidth=\"600\" height=\"300\" frameborder=\"0\"></iframe>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 260,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "62feb19b1d29b75d",
         "type": "ui_template",
         "z": "d41a571824d79944",
-        "group": "bfcf8bedfc1576f5",
+        "group": "1f74b06d4dff1469",
         "name": "",
         "order": 1,
         "width": "0",
@@ -3201,8 +3220,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 120,
-        "y": 240,
+        "x": 260,
+        "y": 200,
         "wires": [
             []
         ]
